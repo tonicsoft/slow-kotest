@@ -47,6 +47,10 @@ tasks.test {
         events("passed", "skipped", "failed")
     }
 
+    // this resolves https://github.com/kotest/kotest/issues/2765 when running tests from the command line
+    // available from KoTest 5.1
+    systemProperty("kotest.framework.classpath.scanning.config.disable", true)
+
     // allows us to run the tests repeatedly without any compilation.
     // Without this, Gradle decides that no inputs have changed therefore does not run the tests.
     outputs.upToDateWhen { false }
