@@ -5,7 +5,7 @@ plugins {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
-    testImplementation("io.kotest:kotest-runner-junit5:5.0.3")
+    testImplementation("io.kotest:kotest-runner-junit5:5.4.0")
 
     // example dependencies to represent a real world size project
     implementation("io.github.microutils:kotlin-logging:1.7.7")
